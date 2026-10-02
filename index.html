@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Imogen -- build v0.2.3 (file last touched 2026-10-02 02:43 UTC)
+     Public information page for the Imogen SMS number, published with GitHub Pages.
+     Exists for Twilio toll-free verification: carriers need a working website that matches
+     the registrant, describes the messaging program, the opt-in, and the SMS terms + privacy.
+     Everything here must stay literally true -- tests/test_compliance_site_v023.js checks the
+     required statements are present and that no placeholder text is left in. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imogen -- Personal SMS Assistant of Dai Nguyen</title>
+<meta name="description" content="Imogen is a personal, non-commercial SMS assistant operated by Dai Nguyen for his own use. Messaging program details, SMS terms and privacy policy.">
+<style>
+  :root {
+    --black: #000; --panel: #0b0b0b; --orange: #ff9c4a; --peach: #ffcc99; --blue: #88b8e0;
+    --violet: #cc99cc; --amber: #f0c850; --text: #e8dfd0; --dim: #b8ab94;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--black); color: var(--text); font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; font-size: 17px; }
+  header { background: var(--orange); color: #000; padding: 28px 24px 22px; border-radius: 0 0 48px 0; }
+  header h1 { margin: 0; font-size: 34px; text-transform: uppercase; letter-spacing: .04em; }
+  header p { margin: 6px 0 0; font-size: 16px; color: #3a2200; }
+  .bar { height: 10px; background: var(--peach); margin-right: 30%; border-radius: 0 0 10px 0; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 24px; }
+  nav a { background: var(--blue); color: #000; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 14px; padding: 6px 16px; border-radius: 0 14px 14px 0; }
+  nav a:nth-child(2) { background: var(--violet); } nav a:nth-child(3) { background: var(--peach); } nav a:nth-child(4) { background: var(--amber); }
+  section { background: var(--panel); border-left: 4px solid var(--blue); border-radius: 0 10px 10px 0; padding: 16px 22px; margin-bottom: 18px; }
+  section:nth-of-type(2n) { border-left-color: var(--violet); }
+  h2 { margin: 0 0 10px; color: var(--amber); text-transform: uppercase; letter-spacing: .03em; font-size: 20px; }
+  ul { padding-left: 22px; margin: 8px 0; } li { margin-bottom: 6px; }
+  .k { color: var(--peach); font-weight: 700; }
+  footer { color: var(--dim); font-size: 14px; text-align: center; padding: 0 16px 32px; }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Imogen</h1>
+  <p>A personal SMS assistant, operated by Dai Nguyen for his own use</p>
+</header>
+<div class="bar"></div>
+<main>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#opt-in">Opt-in</a>
+    <a href="#terms">SMS Terms</a>
+    <a href="#privacy">Privacy</a>
+  </nav>
+
+  <section id="about">
+    <h2>About this messaging program</h2>
+    <p>Imogen is personal, non-commercial assistant software run by Dai Nguyen, a sole proprietor, on his own computer. It sends and receives text messages from the toll-free number <span class="k">(844) 430-2899</span>.</p>
+    <ul>
+      <li><strong>Only one recipient:</strong> the number owner's own mobile phone. Imogen never texts anyone else.</li>
+      <li><strong>What the messages are:</strong> replies to short commands the owner sends (for example STATUS or TASKS), plus occasional reminders and status alerts about his own to-do list and monitoring software he runs.</li>
+      <li><strong>What they are not:</strong> no marketing or promotional messages, no third-party recipients, and no purchased, rented or shared contact lists.</li>
+    </ul>
+  </section>
+
+  <section id="opt-in">
+    <h2>How opt-in works</h2>
+    <p>The only person who receives messages is the owner himself. He opts in by entering his own mobile number into the software's configuration and by texting the toll-free number to start each conversation. Nobody else's number is ever added, and messages are never sent to a number that has not opted in this way.</p>
+  </section>
+
+  <section id="terms">
+    <h2>SMS terms</h2>
+    <ul>
+      <li><strong>Program:</strong> Imogen personal assistant messages from (844) 430-2899.</li>
+      <li><strong>Message frequency varies</strong> with how the owner uses it, typically a few messages a day.</li>
+      <li><strong>Message and data rates may apply.</strong></li>
+      <li><strong>To opt out,</strong> reply <span class="k">STOP</span> at any time. You'll receive one confirmation and no further messages. Reply <span class="k">START</span> to resubscribe.</li>
+      <li><strong>For help,</strong> reply <span class="k">HELP</span>, or email <a href="mailto:mr.dainguyen@gmail.com">mr.dainguyen@gmail.com</a>.</li>
+      <li>Carriers are not liable for delayed or undelivered messages.</li>
+    </ul>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy policy</h2>
+    <ul>
+      <li>The only phone number Imogen stores is the owner's own, kept in a local configuration file on his computer.</li>
+      <li><strong>Mobile numbers and SMS opt-in data and consent are never shared with, sold to, or rented to third parties or affiliates for any purpose,</strong> including marketing.</li>
+      <li>Message content is processed only to carry out the owner's own requests. It passes through the SMS provider (Twilio) as required to deliver texts, and is not used for any other purpose.</li>
+      <li>Questions about this policy: <a href="mailto:mr.dainguyen@gmail.com">mr.dainguyen@gmail.com</a>.</li>
+    </ul>
+  </section>
+</main>
+<footer>Operated by Dai Nguyen (sole proprietor) &middot; Last updated October 2026</footer>
+</body>
+</html>
