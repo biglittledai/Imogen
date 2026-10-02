@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Imogen -- build v0.2.3 (file last touched 2026-10-02 02:43 UTC)
+<!-- Imogen -- build v0.2.4 (file last touched 2026-10-02 03:05 UTC)
      Public information page for the Imogen SMS number, published with GitHub Pages.
      Exists for Twilio toll-free verification: carriers need a working website that matches
      the registrant, describes the messaging program, the opt-in, and the SMS terms + privacy.
@@ -60,14 +60,21 @@
   </section>
 
   <section id="opt-in">
-    <h2>How opt-in works</h2>
-    <p>The only person who receives messages is the owner himself. He opts in by entering his own mobile number into the software's configuration and by texting the toll-free number to start each conversation. Nobody else's number is ever added, and messages are never sent to a number that has not opted in this way.</p>
+    <h2>How opt-in works (keyword: IMOGEN)</h2>
+    <p>The only person who receives messages is the owner himself. He opts in by texting the keyword <span class="k">IMOGEN</span> from his own mobile phone to <span class="k">(844) 430-2899</span>, then confirming. Until opt-in is confirmed, Imogen sends no other messages to that number. Nobody else's number is ever added.</p>
+    <ol>
+      <li><strong>Owner texts:</strong> <span class="k">IMOGEN</span> to (844) 430-2899</li>
+      <li><strong>Imogen replies:</strong> &ldquo;Imogen: Welcome aboard. You've opted in to Imogen personal assistant texts from Dai Nguyen. Msg frequency varies (typically a few per day). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Terms &amp; privacy: https://biglittledai.github.io/Imogen/ Reply Y to confirm.&rdquo;</li>
+      <li><strong>Owner texts:</strong> <span class="k">Y</span></li>
+      <li><strong>Imogen confirms:</strong> &ldquo;Imogen: You're all set. Text ? for commands.&rdquo;</li>
+    </ol>
+    <p>Replying <span class="k">STOP</span> at any point ends all messages; texting IMOGEN again restarts the opt-in.</p>
   </section>
 
   <section id="terms">
     <h2>SMS terms</h2>
     <ul>
-      <li><strong>Program:</strong> Imogen personal assistant messages from (844) 430-2899.</li>
+      <li><strong>Program:</strong> Imogen personal assistant messages from (844) 430-2899. Opt in by texting IMOGEN, then Y to confirm.</li>
       <li><strong>Message frequency varies</strong> with how the owner uses it, typically a few messages a day.</li>
       <li><strong>Message and data rates may apply.</strong></li>
       <li><strong>To opt out,</strong> reply <span class="k">STOP</span> at any time. You'll receive one confirmation and no further messages. Reply <span class="k">START</span> to resubscribe.</li>
