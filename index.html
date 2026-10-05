@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<!-- Imogen -- build v0.2.4 (file last touched 2026-10-02 03:05 UTC)
+<!-- Imogen -- build v0.4.11 (file last touched 2026-10-05 22:55 UTC)
      Public information page for the Imogen SMS number, published with GitHub Pages.
      Exists for Twilio toll-free verification: carriers need a working website that matches
      the registrant, describes the messaging program, the opt-in, and the SMS terms + privacy.
      Everything here must stay literally true -- tests/test_compliance_site_v023.js checks the
-     required statements are present and that no placeholder text is left in. -->
+     required statements are present and that no placeholder text is left in.
+     v0.4.11: Contact section with the registrant's mailing address, after Twilio rejected the
+     first verification with error 30445 (business contact/address could not be verified). The
+     address here must match the Business Address on the Twilio verification form exactly --
+     tests/test_site_contact_v0411.js checks the section. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -25,7 +29,7 @@
   main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
   nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 24px; }
   nav a { background: var(--blue); color: #000; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 14px; padding: 6px 16px; border-radius: 0 14px 14px 0; }
-  nav a:nth-child(2) { background: var(--violet); } nav a:nth-child(3) { background: var(--peach); } nav a:nth-child(4) { background: var(--amber); }
+  nav a:nth-child(2) { background: var(--violet); } nav a:nth-child(3) { background: var(--peach); } nav a:nth-child(4) { background: var(--amber); } nav a:nth-child(5) { background: var(--orange); }
   section { background: var(--panel); border-left: 4px solid var(--blue); border-radius: 0 10px 10px 0; padding: 16px 22px; margin-bottom: 18px; }
   section:nth-of-type(2n) { border-left-color: var(--violet); }
   h2 { margin: 0 0 10px; color: var(--amber); text-transform: uppercase; letter-spacing: .03em; font-size: 20px; }
@@ -47,6 +51,7 @@
     <a href="#opt-in">Opt-in</a>
     <a href="#terms">SMS Terms</a>
     <a href="#privacy">Privacy</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
@@ -91,6 +96,18 @@
       <li>Message content is processed only to carry out the owner's own requests. It passes through the SMS provider (Twilio) as required to deliver texts, and is not used for any other purpose.</li>
       <li>Questions about this policy: <a href="mailto:mr.dainguyen@gmail.com">mr.dainguyen@gmail.com</a>.</li>
     </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <address style="font-style: normal;">
+      <strong>Dai Nguyen</strong> (sole proprietor)<br>
+      8006 Ensemble Dr<br>
+      Houston, TX 77040<br>
+      United States<br>
+      Email: <a href="mailto:mr.dainguyen@gmail.com">mr.dainguyen@gmail.com</a><br>
+      Imogen SMS number: (844) 430-2899
+    </address>
   </section>
 </main>
 <footer>Operated by Dai Nguyen (sole proprietor) &middot; Last updated October 2026</footer>
