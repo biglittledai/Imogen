@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<!-- Imogen -- build v0.4.11 (file last touched 2026-10-05 22:55 UTC)
+<!-- Imogen -- build v0.4.12 (file last touched 2026-10-08 11:00 UTC)
      Public information page for the Imogen SMS number, published with GitHub Pages.
-     Exists for Twilio toll-free verification: carriers need a working website that matches
+     Exists for Twilio sender registration (A2P 10DLC Sole Proprietor campaign since v0.4.12;
+     toll-free verification before that): carriers need a working website that matches
      the registrant, describes the messaging program, the opt-in, and the SMS terms + privacy.
      Everything here must stay literally true -- tests/test_compliance_site_v023.js checks the
      required statements are present and that no placeholder text is left in.
      v0.4.11: Contact section with the registrant's mailing address, after Twilio rejected the
      first verification with error 30445 (business contact/address could not be verified). The
      address here must match the Business Address on the Twilio verification form exactly --
-     tests/test_site_contact_v0411.js checks the section. -->
+     tests/test_site_contact_v0411.js checks the section.
+     v0.4.12: toll-free verification was rejected twice (30445); Imogen moves to a local 10DLC number,
+     (331) 265-3221, registered as an A2P 10DLC Sole Proprietor campaign. Every number on this page is
+     that number; tests/test_site_10dlc_number_v0412.js checks no toll-free number is left. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -56,19 +60,19 @@
 
   <section id="about">
     <h2>About this messaging program</h2>
-    <p>Imogen is personal, non-commercial assistant software run by Dai Nguyen, a sole proprietor, on his own computer. It sends and receives text messages from the toll-free number <span class="k">(844) 430-2899</span>.</p>
+    <p>Imogen is personal, non-commercial assistant software run by Dai Nguyen, a sole proprietor, on his own computer. It sends and receives text messages from the number <span class="k">(331) 265-3221</span>.</p>
     <ul>
       <li><strong>Only one recipient:</strong> the number owner's own mobile phone. Imogen never texts anyone else.</li>
-      <li><strong>What the messages are:</strong> replies to short commands the owner sends (for example STATUS or TASKS), plus occasional reminders and status alerts about his own to-do list and monitoring software he runs.</li>
+      <li><strong>What the messages are:</strong> replies to short commands the owner sends (for example STATUS or TASKS), plus occasional reminders and status alerts about his own to-do list and monitoring software he runs. Replies may include automated summaries of the owner's own systems.</li>
       <li><strong>What they are not:</strong> no marketing or promotional messages, no third-party recipients, and no purchased, rented or shared contact lists.</li>
     </ul>
   </section>
 
   <section id="opt-in">
     <h2>How opt-in works (keyword: IMOGEN)</h2>
-    <p>The only person who receives messages is the owner himself. He opts in by texting the keyword <span class="k">IMOGEN</span> from his own mobile phone to <span class="k">(844) 430-2899</span>, then confirming. Until opt-in is confirmed, Imogen sends no other messages to that number. Nobody else's number is ever added.</p>
+    <p>The only person who receives messages is the owner himself. He opts in by texting the keyword <span class="k">IMOGEN</span> from his own mobile phone to <span class="k">(331) 265-3221</span>, then confirming. Until opt-in is confirmed, Imogen sends no other messages to that number. Nobody else's number is ever added.</p>
     <ol>
-      <li><strong>Owner texts:</strong> <span class="k">IMOGEN</span> to (844) 430-2899</li>
+      <li><strong>Owner texts:</strong> <span class="k">IMOGEN</span> to (331) 265-3221</li>
       <li><strong>Imogen replies:</strong> &ldquo;Imogen: Welcome aboard. You've opted in to Imogen personal assistant texts from Dai Nguyen. Msg frequency varies (typically a few per day). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Terms &amp; privacy: https://biglittledai.github.io/Imogen/ Reply Y to confirm.&rdquo;</li>
       <li><strong>Owner texts:</strong> <span class="k">Y</span></li>
       <li><strong>Imogen confirms:</strong> &ldquo;Imogen: You're all set. Text ? for commands.&rdquo;</li>
@@ -79,7 +83,7 @@
   <section id="terms">
     <h2>SMS terms</h2>
     <ul>
-      <li><strong>Program:</strong> Imogen personal assistant messages from (844) 430-2899. Opt in by texting IMOGEN, then Y to confirm.</li>
+      <li><strong>Program:</strong> Imogen personal assistant messages from (331) 265-3221. Opt in by texting IMOGEN, then Y to confirm.</li>
       <li><strong>Message frequency varies</strong> with how the owner uses it, typically a few messages a day.</li>
       <li><strong>Message and data rates may apply.</strong></li>
       <li><strong>To opt out,</strong> reply <span class="k">STOP</span> at any time. You'll receive one confirmation and no further messages. Reply <span class="k">START</span> to resubscribe.</li>
@@ -106,7 +110,7 @@
       Houston, TX 77040<br>
       United States<br>
       Email: <a href="mailto:mr.dainguyen@gmail.com">mr.dainguyen@gmail.com</a><br>
-      Imogen SMS number: (844) 430-2899
+      Imogen SMS number: (331) 265-3221
     </address>
   </section>
 </main>
