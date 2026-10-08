@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Imogen -- build v0.4.12 (file last touched 2026-10-08 11:00 UTC)
+<!-- Imogen -- build v0.4.13 (file last touched 2026-10-08 11:30 UTC)
      Public information page for the Imogen SMS number, published with GitHub Pages.
      Exists for Twilio sender registration (A2P 10DLC Sole Proprietor campaign since v0.4.12;
      toll-free verification before that): carriers need a working website that matches
@@ -12,7 +12,10 @@
      tests/test_site_contact_v0411.js checks the section.
      v0.4.12: toll-free verification was rejected twice (30445); Imogen moves to a local 10DLC number,
      (331) 265-3221, registered as an A2P 10DLC Sole Proprietor campaign. Every number on this page is
-     that number; tests/test_site_10dlc_number_v0412.js checks no toll-free number is left. -->
+     that number; tests/test_site_10dlc_number_v0412.js checks no toll-free number is left.
+     v0.4.13: the privacy section is titled "Privacy Policy", names the registered brand and carries
+     the exact sentence Twilio's 10DLC campaign form asks for; the terms section is titled "Terms &
+     Conditions", names the brand and has an "SMS Terms" subsection; tests/test_site_privacy_policy_v0413.js. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -36,6 +39,7 @@
   nav a:nth-child(2) { background: var(--violet); } nav a:nth-child(3) { background: var(--peach); } nav a:nth-child(4) { background: var(--amber); } nav a:nth-child(5) { background: var(--orange); }
   section { background: var(--panel); border-left: 4px solid var(--blue); border-radius: 0 10px 10px 0; padding: 16px 22px; margin-bottom: 18px; }
   section:nth-of-type(2n) { border-left-color: var(--violet); }
+  h3 { margin: 12px 0 4px; color: var(--peach); font-size: 17px; text-transform: uppercase; }
   h2 { margin: 0 0 10px; color: var(--amber); text-transform: uppercase; letter-spacing: .03em; font-size: 20px; }
   ul { padding-left: 22px; margin: 8px 0; } li { margin-bottom: 6px; }
   .k { color: var(--peach); font-weight: 700; }
@@ -53,7 +57,7 @@
   <nav>
     <a href="#about">About</a>
     <a href="#opt-in">Opt-in</a>
-    <a href="#terms">SMS Terms</a>
+    <a href="#terms">Terms</a>
     <a href="#privacy">Privacy</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -81,7 +85,9 @@
   </section>
 
   <section id="terms">
-    <h2>SMS terms</h2>
+    <h2>Terms &amp; Conditions</h2>
+    <p>These Terms &amp; Conditions cover Imogen, the SMS program of Dai Nguyen (Sole Proprietor), the registered brand for this messaging program.</p>
+    <h3>SMS Terms</h3>
     <ul>
       <li><strong>Program:</strong> Imogen personal assistant messages from (331) 265-3221. Opt in by texting IMOGEN, then Y to confirm.</li>
       <li><strong>Message frequency varies</strong> with how the owner uses it, typically a few messages a day.</li>
@@ -93,8 +99,10 @@
   </section>
 
   <section id="privacy">
-    <h2>Privacy policy</h2>
+    <h2>Privacy Policy</h2>
     <ul>
+      <li>This Privacy Policy covers Imogen, the SMS program of Dai Nguyen (Sole Proprietor), the registered brand for this messaging program.</li>
+      <li><strong>We do not sell or share your SMS opt-in data or personal information with third parties for marketing purposes.</strong></li>
       <li>The only phone number Imogen stores is the owner's own, kept in a local configuration file on his computer.</li>
       <li><strong>Mobile numbers and SMS opt-in data and consent are never shared with, sold to, or rented to third parties or affiliates for any purpose,</strong> including marketing.</li>
       <li>Message content is processed only to carry out the owner's own requests. It passes through the SMS provider (Twilio) as required to deliver texts, and is not used for any other purpose.</li>
